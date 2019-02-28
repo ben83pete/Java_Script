@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>My Name </title>
+    <script lang = "javascript">
+
+            function buildName(){
+        var firstName =document.getElementById("1");
+        var lastName = document.getElementById("2").value;
+        var fNameVal = (firstName.value);
+        
+
+        var fullName = document.getElementById("3");
+
+        fullName.innerText = fNameVal + " " + lastName;    
+
+        }
+    </script>
+    
+</head>
+
+<body>
+
+<input id="1" type="text">
+<input id="2" type="text">
+<button onclick="buildName();">Build</button><br>
+<label id="3"></label>
+
+
+</body>
+</html>
+    

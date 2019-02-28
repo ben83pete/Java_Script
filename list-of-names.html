@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Page Title</title>
+    
+    <script>
+        var namesArray = ["Ben","Ken","Chris","Sam"];
+
+        function displayNames() {
+            var listCtrl=document.getElementById("names");
+            for(var name of namesArray) {
+                var li = "<li>" + name + "</li>";
+
+                listCtrl.innerHTML += li;
+            }
+        }
+
+    </script>
+</head>
+<body>
+
+    <h3> A list of names</h3>
+    <p>
+        <button onclick="displayNames();">Display Names</button>
+    </p>
+
+    <ul id ="names"></ul>
+    
+</body>
+</html>

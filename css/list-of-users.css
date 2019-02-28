@@ -1,0 +1,15 @@
+table{width: 100%}
+
+table, tr, td { 
+    border: 2px solid rgb(120, 199, 131);
+    border-collapse: collapse;
+}
+.heading{
+    border: 4px solid blueviolet; 
+    font-weight: bold;
+    font-style: italic;
+}
+body{
+    font-family: 'Courier New', Courier, monospace
+}
+.center{ text-align: center}

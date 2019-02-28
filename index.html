@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Index</title>
+    <script lang="javascript">
+        function add(){
+             var op1Ctrl=document.getElementById("op1");
+             var op2Ctrl=document.getElementById("op2");
+             var op1Value = Number(op1Ctrl.value);
+             var op2Value = Number(op2Ctrl.value);
+              
+              var answerCtrl = document.getElementById("answer")
+
+              answerCtrl.value = op1Value-op2Value;
+
+
+              console.log("Answer is:", op1Value-op2Value);
+             }
+                   
+        
+        function setDefault() {
+            var ctrl = document.getElementById("abc");
+            // ctrl.value = "ABC";
+        }
+    </script>
+</head>
+
+<body onload="setDefault();">
+
+    <input id="op1" type="number">
+    <input id="op2" type="number"><br>
+    <button onclick="add();">Add</button>
+    <input id="answer" type= "number">
+
+
+</body>
+
+</html>
